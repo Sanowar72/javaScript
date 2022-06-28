@@ -39,3 +39,6 @@ console.log("hello world");
 // const s= "sonu is a good boy";
 // let m= new String(s);
 // console.log(m);
+const sonu= "lorem fucking people is there in this dark world! so be safe from this shit pople"
+let louda=sonu.slice(0,10);
+console.log(louda);
