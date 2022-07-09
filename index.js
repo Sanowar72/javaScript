@@ -1,4 +1,4 @@
-console.log("hello world");
+// console.log("hello world");
 
 
 // var num=5;
@@ -44,3 +44,37 @@ console.log("hello world");
 // console.log(louda);
 // let monu=sonu.replaceAll("is","louda");
 // console.log(monu);
+ 
+
+
+
+    // class student{
+    //     constructor(name,age,branch){
+    //         this.myname=name;
+    //         this.myage=age;
+    //         this.mybranch=branch;
+    //     }
+    //          mydata(){
+    //             return`hi myname is ${this.myname} my age is ${this.myage} my branch is ${this.mybranch}`;
+    //             // console.log("hiii");
+    //         }
+        
+    // }
+
+    // class mysonu extends student{
+    //     constructor(name,age,branch,sports){
+    //         super(name,age,branch);
+    //         this.mysport= sports;
+    //     }
+    //     myfun(){
+    //         return `${super.mydata()} i love to play this ${this.mysport} game`;
+    //     }
+
+    // }
+
+
+    // // let sonu= new student('sonu',26,'ise');
+    // // sonu.mydata();
+    // let sonu = new mysonu('sonu',25,'ise','cricket');
+    // // sonu.myfun();
+    // console.log(sonu.myfun());
