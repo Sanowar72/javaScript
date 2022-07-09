@@ -9,6 +9,7 @@
   <body>
     <div class="container">
       <div id="para" onmouseover = "sonu()"   >Lorem, ipsum dolor.</div>
+      <div id="some">hii</div>
     </div>
   </body>
   <script>
@@ -17,9 +18,19 @@
     //        s.style.color='red';
     //        console.log("hiiii");
     //    })
+    const some = document.getElementById("some");
+     some.addEventListener('onmouseleave',()=>{
+        //  const l = document.createElement("h1");
+        //  l.innerHTML="hiii how are u";
+        //  document.getElementById("some").append;
+         
+     })
     const sonu = ()=>{
         
             s.style.color='red';
+            // const l = document.createElement("h1");
+            document.getElementById("some").innerHTML="hiii how are u";
+        //  document.getElementById("some").append(l);
 
             console.log("hiii");
 
