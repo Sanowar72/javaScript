@@ -5,36 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>event</title>
+    <style>
+      #para{
+        height: 550px;
+        width: 600px;
+        background-color: aqua;
+        cursor: pointer;
+      }
+      #some{
+        height: 350px;
+        width: 450px;
+        background-color: aquamarine;
+        margin-top: 100px;
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <div id="para" onmouseover = "sonu()"   >Lorem, ipsum dolor.</div>
-      <div id="some">hii</div>
-    </div>
+    
+      <div id="para" >
+        <div id="some"></div>
+      </div>
+      
+   
   </body>
   <script>
-       const s = document.getElementById("para");
-    //    s.addEventListener('onmouseleave',()=>{
-    //        s.style.color='red';
-    //        console.log("hiiii");
-    //    })
-    const some = document.getElementById("some");
-     some.addEventListener('onmouseleave',()=>{
-        //  const l = document.createElement("h1");
-        //  l.innerHTML="hiii how are u";
-        //  document.getElementById("some").append;
+    
+
+
+    //    const s = document.getElementById("para");
+    // //    s.addEventListener('onmouseleave',()=>{
+    // //        s.style.color='red';
+    // //        console.log("hiiii");
+    // //    })
+    // const some = document.getElementById("some");
+    //  some.addEventListener('onmouseleave',()=>{
+    //     //  const l = document.createElement("h1");
+    //     //  l.innerHTML="hiii how are u";
+    //     //  document.getElementById("some").append;
          
-     })
-    const sonu = ()=>{
+    //  })
+    // const sonu = ()=>{
         
-            s.style.color='red';
-            // const l = document.createElement("h1");
-            document.getElementById("some").innerHTML="hiii how are u";
-        //  document.getElementById("some").append(l);
+    //         s.style.color='red';
+    //         // const l = document.createElement("h1");
+    //         document.getElementById("some").innerHTML="hiii how are u";
+    //     //  document.getElementById("some").append(l);
 
-            console.log("hiii");
+    //         console.log("hiii");
 
-        }
+        // }
+        const parentId = document.getElementById("para");
+        const childId = document.getElementById("some");
+
+
+// bubbling and capturing
+        const parentc= ()=>{
+       alert("parent element");
+       console.log("parent element");
+     }
+     const childc= ()=>{
+       alert("child element");
+       console.log("child element");
+      //  event.stopPropagation();
+     }
+
+
+
+        parentId.addEventListener("click",parentc);
+        childId.addEventListener("click",childc);
     
   </script>
 </html>
