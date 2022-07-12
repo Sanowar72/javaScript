@@ -78,3 +78,51 @@
     // let sonu = new mysonu('sonu',25,'ise','cricket');
     // // sonu.myfun();
     // console.log(sonu.myfun());
+
+
+    // let myarr=[1,2,3,4,5,6,'ontjd','jsjxo','jknkc'];
+    // let srrd=[...myarr,'abu','sobu','khobu'];
+    // console.log(srrd);
+
+
+// synchoronous example
+    // const fun1=()=>{
+    //     console.log("func 1 called");
+    // }
+    // const fun2 = ()=>{
+    //     console.log("fun2 called");
+    //     fun1();
+    //     console.log("fun2 called again");
+    // }
+    // fun2()
+
+    // asynchronous example
+    // const afun1 = ()=>{
+    //     console.log("afun1 called");
+    //     setTimeout(() => {
+    //         console.log("waiting period");
+    //     },3000);
+    // }
+
+    // const afun2 = ()=>{
+    //     console.log('afun2 called');
+    //     afun1();
+    //     console.log("again fun2 called");
+    //     setTimeout(() => {
+    //         console.log("fun2 time out");
+    //     }, 3000);
+    // }
+    // afun2();
+    // function currying
+    // const fun1=(a)=>{
+    //     return function (b) {
+    //         return function (c) {
+    //             let sum= a+b+c;
+    //             return sum;
+                
+    //         }
+    //     }
+    // }
+    // let tsum = fun1(5)(3)(5);
+    // console.log(tsum);
+    
