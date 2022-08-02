@@ -60,6 +60,8 @@
     //         }
         
     // }
+    // const mynum = new student('sonu',24,'ise');
+    // console.log(mynum.mydata());
 
     // class mysonu extends student{
     //     constructor(name,age,branch,sports){
@@ -125,4 +127,108 @@
     // }
     // let tsum = fun1(5)(3)(5);
     // console.log(tsum);
+    
+
+
+    // const myobj = {
+    //     name:"sonu",
+    //     cls:"ise",
+    //     bi:{
+    //         name:"fsonu",
+    //         lname:"alam"
+    //     }
+    // }
+
+    // by assigning
+
+    // const obj1= myobj;
+    // // myobj.bi.name='hi sonu'
+    // obj1.name='somthing';
+    // console.log(obj1);
+
+    // by spread operator
+
+    // const obj1={...myobj};
+    // obj1.name='monu';
+    // obj1.bi.lname='changes';
+    // console.log(obj1,myobj);
+
+    // // by json 
+    // const obj1 =  JSON.parse( JSON.stringify(myobj));
+    // obj1.bi.lname='koi nh';
+    // console.log(obj1);
+    // console.log(myobj);
+
+    // const myarr=['hi',1,2,3,'how'];
+    // const[a,...c]=myarr;
+    // console.log(a,c);
+
+    // class student{
+    //     constructor(name,age,branch){
+    //         this.myname=name;
+    //         this.myage=age;
+    //         this.mybranch=branch;
+    //     }
+    //          mydata(){
+    //             return`hi my name is ${this.myname} my age is ${this.myage} my branch is ${this.mybranch}`;
+    //             // console.log("hiii");
+    //         }
+        
+    // }
+    // const mynum = new student('sonu',24,'ise');
+    // console.log(mynum.mydata());
+
+
+
+
+    // class Car {
+    //     constructor(name,car,topspeed) {
+    //       this.myname = name;
+    //       this.mycar = car;
+    //       this.topspeed = topspeed;
+    //     }
+      
+    //       present() {
+    //        return `hii may name is ${this.myname} i have ${this.mycar} whose top speed is ${this.topspeed};
+    //     }
+    // }
+      
+    //   const mycarc = new Car('sonu','audi',250);
+    //   console.log(mycarc.present())
+
+
+
+    // remove duplicate item from array
+
+    // const a = [1,3,5,7,9,5];
+    // const b = [9];
+    // function dupl (a,b){
+    //     const arr=[];
+    //     for(let i=0;i<a.length;i++){
+    //         if(b.includes(a[i])){
+    //             continue;
+    //         }
+    //         arr.push(a[i]);
+    //     }
+    //     return arr;
+    // }
+    // console.log(dupl(a,b));
+
+
+    // for(var i = 0;i<5;i++){
+    //     console.log(i);
+    //     setTimeout(()=>{
+    //         console.log(i);
+    //     },1000)
+    // }
+    function fac(a){
+        var value=1;
+        for(var i=a;i>1;i--){
+            value=value*i;
+        }
+        return value;
+
+    }
+    console.log(fac(5));
+        
     

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: black;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .card {
+      background-color: aliceblue;
+      /* height: 300px; */
+      width: 250px;
+      margin: 10px;
+      border-radius: 10px 10px ;
+    }
+    .card-img {
+      background-color: aquamarine;
+      height: 150px;
+      margin-bottom: 10px;
+      background-size: cover;
+      border-radius: 10px 10px 0 0;
+    }
+    .card1{
+        background-image: url('https://i1.wp.com/arimotravels.com/wp-content/uploads/2021/03/random-drawing-generator-prompts.jpg?fit=963%2C542&ssl=1');
+    }
+    .card2{
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd41h1qG1XxiKDlFZOt_nFU5UClAkf3iDuVg&usqp=CAU');
+    }
+    .card3{
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlR3vxbvG91rTrXIi5p3_jfdYZexEbMZxmbr14vRT-oQJPzKOWYAsrj3_beNlclZAjdHU&usqp=CAU');
+    }
+    .card a{
+        background-color: black;
+        color: white;
+        display: block;
+        padding: 10px 40px;
+        text-align: center;
+        margin: 15px 20px;
+        text-decoration: none;
+    }
+    .card p{
+        padding: 10px;
+    }
+    .card h2{
+        margin: 5px;
+    }
+    .card:hover{
+        background-color: bisque;
+        color: blueviolet;
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: all 2s ease;
+    }
+  </style>
+  <body>
+    <section class="container">
+      <div class="card">
+        <div class="card-img card1"></div>
+        <h2>title</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem quis officia in doloribus dolor harum.
+        </p>
+        <a href="read-more">READ MORE</a>
+      </div>
+      <div class="card">
+        <div class="card-img card2"></div>
+        <h2>title</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem quis officia in doloribus dolor harum.
+        </p>
+        <a href="read-more">READ MORE</a>
+      </div>
+      <div class="card">
+        <div class="card-img card3"></div>
+        <h2>title</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem quis officia in doloribus dolor harum.
+        </p>
+        <a href="read-more">READ MORE</a>
+      </div>
+    </section>
+  </body>
+</html>
