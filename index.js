@@ -221,14 +221,89 @@
     //         console.log(i);
     //     },1000)
     // }
-    function fac(a){
-        var value=1;
-        for(var i=a;i>1;i--){
-            value=value*i;
-        }
-        return value;
 
-    }
-    console.log(fac(5));
-        
+
+    //  factorial of a number
+    // function fac(a){
+    //     var value=1;
+    //     for(var i=a;i>1;i--){
+            
+    //         value=value*i;
+    //     }
+    //     return value;
+
+    // }
+    // console.log(fac(5));
+
+
+
+    //  sum of n natural no
+
+
+    // let sum=0;
+    // let n=prompt("enter the no");
+    // n= Number.parseInt(n);
+    // let n= 5
+    // for(let i=0;i<=n;i++){
+    //     sum+=i;
+    // }
+    // console.log(sum);
     
+
+    //  for in gives index no
+    //  for of gives index value
+    // let arr=['sonu','monu','ronu','tonu'];
+    // for(let i in arr){
+    //     console.log(i);
+       
+       
+    // }
+//  let arr=[45,56,88,46,96];
+//  console.log(arr);
+//  arr[0]=57;
+// //  console.log(arr);
+// let s = delete arr[0];
+// console.log(arr);
+// console.log(arr.length);
+// console.log(s);
+// arr.splice(1,0,102,304,532);
+
+// console.log(arr);
+// arr.splice(1,2);
+// console.log(arr);
+
+
+// const os = require('os');
+// console.log(os.type());
+// console.log(os.version());
+
+// normal functionn currying
+// const add = (a) =>(b)=>(c)=>a+b+c;
+//  function add(a){
+//     return function(b){
+//         return function(c){ 
+//             return a+b+c;
+//         }
+//     }
+// }
+// const sum = add(3)(2)(5);
+// console.log(add(3)(2)(5));
+
+// let s = " sonu is a good boy";
+// let m = "chi...oo";
+// // let sm = `${s} ${m}`;
+// let sm=s+m;
+// console.log(sm);
+
+
+// infinite currying
+
+// function add(a){
+//      return function(b){
+//          if(b) 
+//              return add(a+b);
+         
+//              return a;
+//      }
+// }
+// console.log(add(5)(6)(8)(2)(3)(4)());
