@@ -482,3 +482,5 @@
 // const bindFun = myname.bind(obj);
 // console.log(bindFun(24, "engineer"));
 // console.log(bindFun(28,"professor"));
+
+
