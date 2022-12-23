@@ -56,7 +56,7 @@
 
 // }
 // const mynum = new student('sonu',24,'ise');
-// console.log(mynum.mydata());
+// // console.log(mynum.mydata());
 
 // class mysonu extends student{
 //     constructor(name,age,branch,sports){
@@ -135,13 +135,13 @@
 // // myobj.bi.name='hi sonu'
 // obj1.name='somthing';
 // console.log(obj1,myobj);
-// // console.log(myobj.bi);
+// console.log(myobj.bi);
 
 // by spread operator
 
 // const obj1={...myobj};
 // obj1.name='monu';
-// obj1.bi.lname='changes';
+// // obj1.bi.lname='changes';
 // console.log(obj1,myobj);
 
 // // by json
@@ -294,7 +294,7 @@
 
 // let arr="hello hii are you";
 // let word = arr.split(" ");
-// let sw= arr.charAt(0).toUpperCase()+arr.slice(1);
+// let sw= word.charAt(0).toUpperCase()+word.slice(1);
 // console.log(sw);
 
 // const mySentence = "freeCodeCamp is an awesome resource";
@@ -427,15 +427,14 @@
 
 // const obj = new Promise((resolve, reject) => {
 //   let req = false;
-//   if (req == true) resolve("its true :");
+//   if (req) resolve("its true :");
 //   else reject("its false :");
 // })
 //   .then((val) => {
-//     console.log(val);
-//     return val+20;
+//     console.log(val,"this is then block");
 //   })
 //   .catch((error) => {
-//     console.log(error);
+//     console.log(error,"this is catch block");
 //   })
 //   .finally(() => {
 //     console.log("pakka ill :smile    execute :");
@@ -484,3 +483,63 @@
 // console.log(bindFun(28,"professor"));
 
 
+// const myarr = ["HTML", "CSS", "REACT", "JAVASCRIPT", "BOOTSTRAP", "OTHERS"];
+// var skills = "HTML";
+// let index = myarr.indexOf(skills);
+// if (index < 0) {
+//   myarr.push(skills);
+// } else {
+//   myarr.splice(index,1);
+// }
+
+
+
+
+// const length = 4;
+// // debugger;
+// const numbers = [];
+// for (var i = 0; i < length; i++);{
+//   numbers.push(i+1);
+// }
+// console.log(numbers);
+
+
+// var length = 4;
+// // debugger;
+// var numbers = [];
+// for (var i = 0; i < length; i++);{
+//   numbers.push(i+1);
+// }
+// console.log(numbers);
+
+
+// let length = 4;
+// const num = [];
+// for (var i = 0; i < length; i++){
+//   num.push(i + 1);
+// }
+// console.log(num);
+
+
+// const arr = ["hiiii", "hello"];
+// arr.length = 0;
+// console.log(arr[0]);
+
+
+
+const str = "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+
+const ans = str.split(" ");
+// console.log(ans);
+// var count = 0;
+// for (let i of ans) {
+//   console.log(i);
+//   if (i === "galley")
+//     count++;
+// }
+// console.log(count);
+
+const word = ans.map((ele) => {
+  return ele[0].toUpperCase() + ele.substring(1);
+}).join(" ");
+console.log(word);
