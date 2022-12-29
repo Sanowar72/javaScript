@@ -527,19 +527,110 @@
 
 
 
-const str = "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+// const str = "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+// const str=str.split(" ");
+// // console.log(ans);
+// // var count = 0;
+// // for (let i of ans) {
+// //   console.log(i);
+// //   if (i === "galley")
+// //     count++;
+// // }
+// // console.log(count);
 
-const ans = str.split(" ");
-// console.log(ans);
-// var count = 0;
-// for (let i of ans) {
-//   console.log(i);
-//   if (i === "galley")
-//     count++;
+// const word = ans.map((ele) => {
+//   return ele[0].toUpperCase() + ele.substring(1);
+// }).join(" ");
+// console.log(word);
+
+
+// const str1="hii sonu hii is a good a boy sonu kahan ho"
+// const ans = str1.split(" ");
+
+// const Noofoccur = [];
+// for (let i = 0; i < str1.length; i++){
+//   let count = 0;
+//   for (let j = 0; j < str1.length; j++){
+//     if (ans[i] == ans[j])
+//       count++;
+//   }
+//   if (Noofoccur.indexOf(ans[i]) < 0) {
+//     Noofoccur.push(ans[i]);
+//     Noofoccur.push(count);
+//   } else {
+//     continue;
+//   }
 // }
-// console.log(count);
+// for (let i = 0; i < Noofoccur.length; i = i + 2){
+//   if (i + 2 < Noofoccur.length)
+//     console.log(Noofoccur[i],"=",Noofoccur[i+1]);
+// }
 
-const word = ans.map((ele) => {
-  return ele[0].toUpperCase() + ele.substring(1);
-}).join(" ");
-console.log(word);
+
+// const isEven=(a) => {
+//   if (a % 2 == 0)
+//     return true;
+//   else
+//     return false;
+// }
+// console.log(isEven(5));
+
+// function getFileExtension(filename){
+
+//   // get file extension
+//   // if (filename.indexof(".") >= 0) {
+//     const extension = filename.split('.');
+//     if (extension.length > 1) {
+//       // extension=extension.pop()
+//       return extension.pop();
+//     } else
+//     return false;
+//   // }
+ 
+// }
+
+// // passing the filename
+// const result1 = getFileExtension('module');
+// console.log(result1);
+
+// const result2 = getFileExtension('module.txt');
+// console.log(result2);
+
+
+// function getFileExtension(filename){
+//   const extension = filename.split('.');
+//   if (extension.length > 1) {
+//     return extension.pop();
+//   } else
+//   return false;
+// }
+// const result1 = getFileExtension('module');
+// console.log(result1);
+
+// const result2 = getFileExtension('module.sonu.txt');
+// console.log(result2);
+
+
+
+// const arr = [1, 2, 3, 4, 5];
+
+
+// arr.forEach((ele,ind) => {
+//   arr[ind] = ele * 2;
+// })
+// console.log(arr);
+
+// const arr2 = [1, 2, 3, 4, 5];
+// const ansMap=arr2.map((ele) => {
+//   return ele * 2;
+// })
+// console.log(ansMap);
+
+
+// const length = 8;
+// // debugger;
+// const numbers = [];
+// for (var i = 0; i < length; i++);{
+//   numbers.push(i+1);
+// }
+// console.log(numbers);
