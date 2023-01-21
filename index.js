@@ -528,7 +528,7 @@
 
 
 // const str = "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
-// const str=str.split(" ");
+// const str1=str.split(" ");
 // // console.log(ans);
 // // var count = 0;
 // // for (let i of ans) {
@@ -538,7 +538,7 @@
 // // }
 // // console.log(count);
 
-// const word = ans.map((ele) => {
+// const word = str1.map((ele) => {
 //   return ele[0].toUpperCase() + ele.substring(1);
 // }).join(" ");
 // console.log(word);
@@ -634,3 +634,57 @@
 //   numbers.push(i+1);
 // }
 // console.log(numbers);
+
+
+// const str="      The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela        ".trim().split(" ");
+
+// const word = str.map((ele) => {
+//   return ele[0].toUpperCase() + ele.substring(1);
+// }).join(" ");
+// console.log(word);
+
+// const arr = [1, 2, 3, 4, 1, 6, 8, 3, 5, 1, 3];
+// const ans = [... new Set(arr)];
+// console.log(ans);
+
+
+// const arr = [1, 2, 3, 4, 5, 6];
+// const ans = arr.reduce((accu, ele) => {
+//   return accu = accu + ele;
+// })
+// console.log(ans);
+
+// const brand = ["bajaj", "hero", "tvs", "ktm","bajaj"];
+// const ans = brand.filter((ele) => {
+//   return ele === "bajaj";
+// })
+// console.log(ans);
+
+const mybike = [
+// {
+//   name: "bajaj",
+//   id: 1,
+//   km:200
+// },
+// {
+//   name: "hero",
+//   id: 2,
+//   km:' '
+// }
+]
+
+// const ans = mybike?.map((ele) => {
+//   return ele.km;
+// })
+// console.log(ans);
+
+// const myobj = {
+//   filename: "something",
+//   trigger: "audio",
+//   video_files_path: [""],
+// };
+// // myobj.timestamp = Date.now();
+// myobj.video_files_path.push("myName");
+
+// console.log(myobj);
+// console.log(myobj.video_files_path.length);
