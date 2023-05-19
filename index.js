@@ -55,8 +55,9 @@
 //         }
 
 // }
-// const mynum = new student('sonu',24,'ise');
-// // console.log(mynum.mydata());
+// const mynum = new student('sonu', 24, 'ise');
+// console.log(mynum);
+// console.log(mynum.mydata());
 
 // class mysonu extends student{
 //     constructor(name,age,branch,sports){
@@ -141,7 +142,7 @@
 
 // const obj1={...myobj};
 // obj1.name='monu';
-// // obj1.bi.lname='changes';
+// obj1.bi.lname='changes';
 // console.log(obj1,myobj);
 
 // // by json
@@ -437,7 +438,7 @@
 //     console.log(error,"this is catch block");
 //   })
 //   .finally(() => {
-//     console.log("pakka ill :smile    execute :");
+//     console.log("pakka ill 😄 execute :");
 //   });  
 
   // closure
@@ -660,7 +661,7 @@
 // })
 // console.log(ans);
 
-const mybike = [
+// const mybike = [
 // {
 //   name: "bajaj",
 //   id: 1,
@@ -671,7 +672,7 @@ const mybike = [
 //   id: 2,
 //   km:' '
 // }
-]
+// ]
 
 // const ans = mybike?.map((ele) => {
 //   return ele.km;
@@ -688,3 +689,87 @@ const mybike = [
 
 // console.log(myobj);
 // console.log(myobj.video_files_path.length);
+
+
+// const registrationNumber=
+// function validateRegistrationNumber(registrationNumber) {
+//   // Regular expression to match the expected format of the registration number
+//   var pattern = /^[A-Z]{2}[0-9]{2}[A-Z]{2}[0-9]{4}$/;
+//   if (pattern.test(registrationNumber)) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(validateRegistrationNumber("AB12CD34")); // true
+// console.log(validateRegistrationNumber("AB12CD3")); // false
+// console.log(validateRegistrationNumber("AB12CD3456")); // false
+
+
+// function validateRegistrationNumber(registrationNumber) {
+//   var pattern = /^[A-Z]{2}[-][0-9]{2}[A-Z]{1}[-][0-9]{4}$/;
+//   if (pattern.test(registrationNumber)) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(validateRegistrationNumber("AB12CD34")); // true
+// console.log(validateRegistrationNumber("AB12CD3")); // false
+// console.log(validateRegistrationNumber("AB-12C-3456")); // false
+
+// function sayHello() {
+//   return "Hello, ";
+// }
+// function greeting(helloMessage, name) {
+//   console.log(helloMessage + name);
+// }
+// // Pass `sayHello` as an argument to `greeting` function
+// greeting(sayHello(), "JavaScript!");
+
+// let a = null;
+// let b = typeof a == "number" ? a ? a : 0 : "";
+// console.log(b);
+
+function encrypt(str) {
+  // console.log(str);
+  let resstr = '';
+  const myarr = [];
+  for (let i = 0; i < str.length; i++){
+    let count = 0;
+    for (let j = 0; j < str.length; j++){
+      if (str[i] == str[j]) {
+        count++;
+      }
+    }
+    // console.log(count++);
+    if (count > 1) {
+      if (!myarr.includes(str[i])) {
+        myarr.push(count);
+        myarr.push(str[i]);
+        resstr += count+str[i];
+      }
+    } else {
+      count = 0;
+      if (!myarr.includes(str[i])) {
+        myarr.push(1);
+        myarr.push(str[i]);
+        resstr += 1+str[i];
+      }
+    }
+    
+  }
+  let myres = resstr + "awu2tyu5bhy7";
+  let finalres = '';
+  for (let i = 0; i < myres.length; i++){
+    if ((i + 1) % 3 == 0) {
+      finalres += "X";
+    } else {
+      finalres += myres[i];
+    }
+  }
+  // console.log(finalres);
+  return finalres;
+}
+console.log(encrypt("aabbcdea"));
