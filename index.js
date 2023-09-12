@@ -732,44 +732,48 @@
 // let b = typeof a == "number" ? a ? a : 0 : "";
 // console.log(b);
 
-function encrypt(str) {
-  // console.log(str);
-  let resstr = '';
-  const myarr = [];
-  for (let i = 0; i < str.length; i++){
-    let count = 0;
-    for (let j = 0; j < str.length; j++){
-      if (str[i] == str[j]) {
-        count++;
-      }
-    }
-    // console.log(count++);
-    if (count > 1) {
-      if (!myarr.includes(str[i])) {
-        myarr.push(count);
-        myarr.push(str[i]);
-        resstr += count+str[i];
-      }
-    } else {
-      count = 0;
-      if (!myarr.includes(str[i])) {
-        myarr.push(1);
-        myarr.push(str[i]);
-        resstr += 1+str[i];
-      }
-    }
+// function encrypt(str) {
+//   // console.log(str);
+//   let resstr = '';
+//   const myarr = [];
+//   for (let i = 0; i < str.length; i++){
+//     let count = 0;
+//     for (let j = 0; j < str.length; j++){
+//       if (str[i] == str[j]) {
+//         count++;
+//       }
+//     }
+//     // console.log(count++);
+//     if (count > 1) {
+//       if (!myarr.includes(str[i])) {
+//         myarr.push(count);
+//         myarr.push(str[i]);
+//         resstr += count+str[i];
+//       }
+//     } else {
+//       count = 0;
+//       if (!myarr.includes(str[i])) {
+//         myarr.push(1);
+//         myarr.push(str[i]);
+//         resstr += 1+str[i];
+//       }
+//     }
     
-  }
-  let myres = resstr + "awu2tyu5bhy7";
-  let finalres = '';
-  for (let i = 0; i < myres.length; i++){
-    if ((i + 1) % 3 == 0) {
-      finalres += "X";
-    } else {
-      finalres += myres[i];
-    }
-  }
-  // console.log(finalres);
-  return finalres;
-}
-console.log(encrypt("aabbcdea"));
+//   }
+//   let myres = resstr + "awu2tyu5bhy7";
+//   let finalres = '';
+//   for (let i = 0; i < myres.length; i++){
+//     if ((i + 1) % 3 == 0) {
+//       finalres += "X";
+//     } else {
+//       finalres += myres[i];
+//     }
+//   }
+//   // console.log(finalres);
+//   return finalres;
+// }
+// console.log(encrypt("aabbcdea"));
+// nothing changed
+
+
+// vhebceonc
