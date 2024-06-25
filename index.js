@@ -773,7 +773,22 @@
 //   return finalres;
 // }
 // console.log(encrypt("aabbcdea"));
-// nothing changed
+  
 
-
-// vhebceonc
+// promise 
+// const cart = ["shoes"];
+// const createOrder = (cart) => {
+//   const pr = new Promise((resolve, reject) => {
+//     if (cart.length === 0) {
+//       reject("invalid cart");
+//     }
+//     setTimeout(() => {
+//       resolve("promise resolved");
+//     }, 2000);
+//   });
+//   return pr;
+// };
+// const promise = createOrder(cart);
+// promise
+//   .then((res) => console.log(res))
+//   .catch((err) => console.log("promise got rejected--->", err));
