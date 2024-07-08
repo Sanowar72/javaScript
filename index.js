@@ -422,8 +422,6 @@
 // two();
 // one(two(one()));
 
-
-
 // promises
 
 // const obj = new Promise((resolve, reject) => {
@@ -439,20 +437,20 @@
 //   })
 //   .finally(() => {
 //     console.log("pakka ill 😄 execute :");
-//   });  
+//   });
 
-  // closure
+// closure
 
-  // const parent=(a)=>{
-  //   let b=10;
-  //   const child=()=>{
-  //     console.log(a+b);
-  //   }
-  //   child();
-  // }
-  // parent(5);
+// const parent=(a)=>{
+//   let b=10;
+//   const child=()=>{
+//     console.log(a+b);
+//   }
+//   child();
+// }
+// parent(5);
 
-  // call in javaScript
+// call in javaScript
 
 // const obj = { name: "Sanowar" };
 
@@ -470,7 +468,6 @@
 // }
 // console.log(myname.apply(obj,[24,"engineer"]));
 
-
 // apply
 
 // const obj = { name: "Sanowar" };
@@ -483,7 +480,6 @@
 // console.log(bindFun(24, "engineer"));
 // console.log(bindFun(28,"professor"));
 
-
 // const myarr = ["HTML", "CSS", "REACT", "JAVASCRIPT", "BOOTSTRAP", "OTHERS"];
 // var skills = "HTML";
 // let index = myarr.indexOf(skills);
@@ -493,9 +489,6 @@
 //   myarr.splice(index,1);
 // }
 
-
-
-
 // const length = 4;
 // // debugger;
 // const numbers = [];
@@ -503,7 +496,6 @@
 //   numbers.push(i+1);
 // }
 // console.log(numbers);
-
 
 // var length = 4;
 // // debugger;
@@ -513,7 +505,6 @@
 // }
 // console.log(numbers);
 
-
 // let length = 4;
 // const num = [];
 // for (var i = 0; i < length; i++){
@@ -521,12 +512,9 @@
 // }
 // console.log(num);
 
-
 // const arr = ["hiiii", "hello"];
 // arr.length = 0;
 // console.log(arr[0]);
-
-
 
 // const str = "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
 // const str1=str.split(" ");
@@ -543,7 +531,6 @@
 //   return ele[0].toUpperCase() + ele.substring(1);
 // }).join(" ");
 // console.log(word);
-
 
 // const str1="hii sonu hii is a good a boy sonu kahan ho"
 // const ans = str1.split(" ");
@@ -567,7 +554,6 @@
 //     console.log(Noofoccur[i],"=",Noofoccur[i+1]);
 // }
 
-
 // const isEven=(a) => {
 //   if (a % 2 == 0)
 //     return true;
@@ -587,7 +573,7 @@
 //     } else
 //     return false;
 //   // }
- 
+
 // }
 
 // // passing the filename
@@ -596,7 +582,6 @@
 
 // const result2 = getFileExtension('module.txt');
 // console.log(result2);
-
 
 // function getFileExtension(filename){
 //   const extension = filename.split('.');
@@ -611,10 +596,7 @@
 // const result2 = getFileExtension('module.sonu.txt');
 // console.log(result2);
 
-
-
 // const arr = [1, 2, 3, 4, 5];
-
 
 // arr.forEach((ele,ind) => {
 //   arr[ind] = ele * 2;
@@ -627,7 +609,6 @@
 // })
 // console.log(ansMap);
 
-
 // const length = 8;
 // // debugger;
 // const numbers = [];
@@ -635,7 +616,6 @@
 //   numbers.push(i+1);
 // }
 // console.log(numbers);
-
 
 // const str="      The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela        ".trim().split(" ");
 
@@ -647,7 +627,6 @@
 // const arr = [1, 2, 3, 4, 1, 6, 8, 3, 5, 1, 3];
 // const ans = [... new Set(arr)];
 // console.log(ans);
-
 
 // const arr = [1, 2, 3, 4, 5, 6];
 // const ans = arr.reduce((accu, ele) => {
@@ -690,7 +669,6 @@
 // console.log(myobj);
 // console.log(myobj.video_files_path.length);
 
-
 // const registrationNumber=
 // function validateRegistrationNumber(registrationNumber) {
 //   // Regular expression to match the expected format of the registration number
@@ -705,7 +683,6 @@
 // console.log(validateRegistrationNumber("AB12CD34")); // true
 // console.log(validateRegistrationNumber("AB12CD3")); // false
 // console.log(validateRegistrationNumber("AB12CD3456")); // false
-
 
 // function validateRegistrationNumber(registrationNumber) {
 //   var pattern = /^[A-Z]{2}[-][0-9]{2}[A-Z]{1}[-][0-9]{4}$/;
@@ -758,7 +735,7 @@
 //         resstr += 1+str[i];
 //       }
 //     }
-    
+
 //   }
 //   let myres = resstr + "awu2tyu5bhy7";
 //   let finalres = '';
@@ -773,9 +750,8 @@
 //   return finalres;
 // }
 // console.log(encrypt("aabbcdea"));
-  
 
-// promise 
+// promise
 // const cart = ["shoes"];
 // const createOrder = (cart) => {
 //   const pr = new Promise((resolve, reject) => {
@@ -792,3 +768,34 @@
 // promise
 //   .then((res) => console.log(res))
 //   .catch((err) => console.log("promise got rejected--->", err));
+
+// const arr = [
+//   {
+//     firstName: "sonu",
+//     lastName: "singh",
+//     age: 30,
+//   },
+//   {
+//     firstName: "shray",
+//     lastName: "sharma",
+//     age: 22,
+//   },
+//   {
+//     firstName: "gourav",
+//     lastName: "jaiswal",
+//     age: 19,
+//   },
+//   {
+//     firstName: "monu",
+//     lastName: "mahashay",
+//     age: 35,
+//   },
+// ];
+// const output = arr.reduce((acc, curr) => {
+//   // if(curr.age>25){
+//   //   acc.push(curr.firstName)
+//   // }
+//   // return acc
+//   return curr.age > 25 ? [...acc, curr.firstName] : acc;
+// }, []);
+// console.log(output);
