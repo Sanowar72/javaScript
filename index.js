@@ -486,8 +486,9 @@
 // if (index < 0) {
 //   myarr.push(skills);
 // } else {
-//   myarr.splice(index,1);
+//   myarr.splice(index, 1);
 // }
+// console.log(myarr);
 
 // const length = 4;
 // // debugger;
@@ -799,3 +800,4 @@
 //   return curr.age > 25 ? [...acc, curr.firstName] : acc;
 // }, []);
 // console.log(output);
+
